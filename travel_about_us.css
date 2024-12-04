@@ -1,0 +1,270 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    line-height:1.6;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+/* Navigation Bar */
+.logo {
+    color: azure;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.search-bar button {
+    padding: 10px 15px;
+    margin-left: 10px;
+    border: none;
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero{
+    height:100vh;
+    background: url('https://e0.pxfuel.com/wallpapers/496/62/desktop-wallpaper-italy-northern-italy.jpg') no-repeat center center/cover;
+    position: relative;
+}
+.overlay {
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    text-align: center;
+    padding: 0 20px;
+}
+
+
+.content-wrapper {
+    width: 100%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Slight transparency */
+    border-radius: 10px;
+    padding: 3rem 2rem;
+}
+
+/* About Section */
+.about-section {
+    color: #000;
+    padding: 2rem;
+}
+
+.about-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Team Section */
+.team-section {
+    padding: 2rem;
+}
+
+.team-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.team-member h3 {
+    margin: 0.2rem 0;
+    font-size: 1rem;
+    color: #666;
+}
+
+.team-member p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/*styling for travel_recommendation.js JSX part*/
+
+/* Container styling for each item */
+.result-item {
+    background: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Hover effect */
+.result-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* City name styling */
+.city-name {
+    background-color: #007bff;
+    color: white;
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 10px;
+    border-radius: 4px 4px 0 0;
+}
+
+/* Image styling */
+.city-image {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #f1f1f1;
+    margin-bottom: 10px;
+}
+
+/* Description styling */
+.city-description {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #555;
+    padding: 0 10px;
+    text-align: left;
+}
+
+/* Common styling for headings */
+h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Add some responsive behavior */
+@media (max-width: 768px) {
+    .result-item {
+        margin-bottom: 15px;
+    }
+
+    .city-name {
+        font-size: 1rem;
+        padding: 8px;
+    }
+
+    .city-description {
+        font-size: 0.8rem;
+    }
+}
+
+/* Social Media Icons */
+.social-icons {
+    position: fixed;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 5;
+
+}   
+
+.social-icon {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    margin: 10px 0;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+    color: #007BFF;
+}
+
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>About us - KhanTraveller</title>
+    <link rel="stylesheet" href="./travel_about_us.css">
+    <link rel="stylesheet" href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css'>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo"><a href="#" class="social-icon"><i class="fas fa-plane"></i></a>TravelBloom</div>
+        <ul class="nav-links">
+            <li><a href="./travel_recommendation.html" id="Home">Home</a></li>
+            <li><a href="./travel_about_us.html" id="AboutUs">About Us</a></li>
+            <li><a href="./travel_contact_us.html" id="ContactUs">Contact Us</a></li>
+        </ul>
+        <div class="search-bar">
+            <input type="text" id="RecommendationSearch" placeholder="Enter a destination or keyword">
+            <button id="btnSearch">Search</button>
+            <button id="clearButton">Clear</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section (combined about and team sections under one background) -->
+    <section class="hero">
+        <div class="overlay">
+        <div class="content-wrapper">
+            <!-- About Section -->
+            <div class="about-section">
+                <h1>About Us</h1>
+                <p>Welcome to TravelBloom! We are a team of passionate individuals committed to providing excellent travel experiences. Our mission is to deliver seamless and memorable journeys to dream destinations worldwide. Join us as we prioritize integrity, innovation, customer satisfaction, and teamwork.</p>
+            </div>
+        
+            <!-- Team Section -->
+            <div class="team-section">
+                <h2>Our Team</h2>
+                <div class="team-members">
+                    <div class="team-member">
+                        <img src="https://png.pngtree.com/thumb_back/fh260/background/20230617/pngtree-this-man-is-in-a-cartoon-style-with-a-beard-image_2973180.jpg" alt="John Doe">
+                        <h3>John Doe</h3>
+                        <p>Director</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRGIyVAhWVulUwDII7rV1qrr4r12Hf9TC4FitcehAb-MgKDUGS5p7nn5oBgzIv82HnuTg&usqp=CAU" alt="Mike Tyson">
+                        <h3>Mike Tyson</h3>
+                        <p>CEO</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://i.pinimg.com/736x/b8/4a/32/b84a32ef514ea6d74a2f36cc1f3c8146.jpg" alt="Celina Thomas">
+                        <h3>Celina Thomas</h3>
+                        <p>CFO</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    
+    <div class="searchCondition">
+        <div id='result'></div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 KhanTraveller. All rights reserved.</p>
+    </footer>
+    
+    <script src="./travel_about_us.js"></script>
+</body>
+</html>
+
