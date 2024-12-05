@@ -22,10 +22,13 @@ header {
 }
 
 /* Navigation Bar */
-.logo {
+.logo{
     color: azure;
     font-size: 25px;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 nav {

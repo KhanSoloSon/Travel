@@ -83,7 +83,9 @@ function clearResults() {
 document.getElementById('clearButton').addEventListener('click', clearResults);
 
 function bookNow(){
-    window.location.href = "https://www.booking.com/index.en-gb.html?label=gen173nr-1BCAEoggI46AdIM1gEaKEBiAEBmAEJuAEXyAEM2AEB6AEBiAIBqAIDuAL5yrm6BsACAdICJGI5MjhlZWE1LWY4YzEtNDE3NS05YjdkLWI2NTJmODFjOTU3MNgCBeACAQ&sid=ce1232973ec58b34256121ab10346139&keep_landing=1&sb_price_type=total&"
+    /*window.location.href = "https://www.booking.com/index.en-gb.html?label=gen173nr-1BCAEoggI46AdIM1gEaKEBiAEBmAEJuAEXyAEM2AEB6AEBiAIBqAIDuAL5yrm6BsACAdICJGI5MjhlZWE1LWY4YzEtNDE3NS05YjdkLWI2NTJmODFjOTU3MNgCBeACAQ&sid=ce1232973ec58b34256121ab10346139&keep_landing=1&sb_price_type=total&"*//* This is code that directly open the url */
+    const bookingUrl = "https://www.booking.com/index.en-gb.html?label=gen173nr-1BCAEoggI46AdIM1gEaKEBiAEBmAEJuAEXyAEM2AEB6AEBiAIBqAIDuAL5yrm6BsACAdICJGI5MjhlZWE1LWY4YzEtNDE3NS05YjdkLWI2NTJmODFjOTU3MNgCBeACAQ&sid=ce1232973ec58b34256121ab10346139&keep_landing=1&sb_price_type=total&"
+    window.open(bookingUrl,"_blank")
 }
 
 document.getElementById('BookButton').addEventListener('click',bookNow);
